@@ -4,3 +4,4 @@ content of rooms
 content of feedbacks
 languages
 # hotel
+# hotel
