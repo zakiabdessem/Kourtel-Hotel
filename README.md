@@ -5,3 +5,4 @@ content of feedbacks
 languages
 # hotel
 # hotel
+# hotel
