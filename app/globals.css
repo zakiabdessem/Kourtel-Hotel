@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "~leaflet/dist/leaflet.css";
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -16,12 +17,200 @@
   }
 }
 
-body {
+/* CUSTOM SCROLLBAR*/
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #746341 #dfe9eb;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background-color: #dfe9eb;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #b8c0c2;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #b8c0c2;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #746341;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #bca069;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #746341;
+}
+
+/* CUSTOM SCROLLBAR Ends*/
+
+.main-content {
+  padding-bottom: 30px; /* or a value that matches your footer's height */
+}
+
+footer {
+  background-color: var(--background-start-rgb); /* or any other color */
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+}
+
+.section-title {
+  font-size: 2.5rem /* 24px */;
+  line-height: 2rem /* 32px */;
+  font-weight: 600;
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.section-details {
+  text-align: center;
+}
+.section-rooms {
+  /* Full screen height and full width */
+  width: 100%;
+  height: fit-content; /* Adjust the height as per your design requirements */
+}
+
+.color-overlay {
+  /* Full coverage overlay with semi-transparency */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(107, 92, 60, 0.849);
+}
+
+.content-container {
+  /* Center content */
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.border-title {
+  width: 138px;
+  height: 4px;
+  flex-shrink: 0;
+  border-radius: 0.125rem;
+  background-color: #ffffff;
+  margin-top: 1.2rem /* 16px */;
+  margin-bottom: 1.2rem /* 16px */;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+/* Existing styles */
+
+/* Ensure room cards have a specific width to fit within the swiper slide */
+.room-card {
+  /* Flexbox layout for the card */
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Take the full width of the swiper slide */
+  max-width: 385px; /* Set a max-width for larger screens */
+  margin: auto; /* Center the card */
+  padding: 16px;
+}
+.mySwiper {
+  /* Width and height adjusted to fit the room cards */
+  height: auto;
+  width: 100%;
+}
+
+.swiper-slide {
+  /* Adjust the slide to center the content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedCard {
+  width: auto;
+  max-width: 270px;
+  height: auto;
+  max-height: 286px;
+  background-color: #fafafa;
+}
+
+@media (min-width: 640px) {
+  /* sm breakpoint */
+  .feedCard {
+    width: calc(50% - 2rem); /* 2 cards per row */
+  }
+}
+
+@media (min-width: 768px) {
+  /* md breakpoint */
+  .feedCard {
+    width: calc(33.333% - 2rem); /* 3 cards per row */
+  }
+}
+
+@media (min-width: 1024px) {
+  /* lg breakpoint */
+  .feedCard {
+    width: calc(25% - 2rem); /* 4 cards per row */
+  }
 }
