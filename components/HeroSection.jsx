@@ -16,11 +16,12 @@ function HeroSection() {
         <p className="p-3 my-2 text-lg lg:text-2xl font-raleway font-medium tracking-wide text-gray-900 w-5/6 lg:text-left text-center">
           Every moment feels like the first time in paradise view
         </p>
-        <button
-          type="button"
+        <a
+            type="button"
+            href="/contact"
           className="p-3 ml-2 text-white bg-primary hover:bg-primary focus:outline-none font-medium text-sm rounded-3xl">
           Book now
-        </button>
+        </a>
       </div>
 
       <div className="md:flex p-4 m-5">

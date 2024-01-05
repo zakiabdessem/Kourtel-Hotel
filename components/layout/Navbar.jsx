@@ -18,11 +18,12 @@ function Navbar() {
           <img src="/logo.svg" className="h-10" alt="Logo" />
         </a>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse justify-center items-center">
-          <button
+          <a
             type="button"
+            href="/contact"
             className="text-white bg-primary hover:bg-primary focus:outline-none font-medium rounded-lg text-sm px-4 py-2 text-center">
             Book now
-          </button>
+          </a>
   
         <button
           onClick={toggleMenu}
