@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: "Hotel kourtel",
@@ -30,6 +31,8 @@ export default function RootLayout({
         <Navbar />
         <main className="flex min-h-screen flex-col items-center justify-between py-4 pb-0 mt-8">
           {children}
+          <Analytics />
+
         </main>
         <Footer />
       </body>
