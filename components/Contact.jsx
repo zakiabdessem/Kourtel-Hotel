@@ -35,7 +35,7 @@ function Contact() {
           Message
         </label>
         <textarea
-          class="w-full h-40 p-2 rounded-none resize-none border-[1px] border-gray-200 focus:border-transparent"
+          className="w-full h-40 p-2 rounded-none resize-none border-[1px] border-gray-200 focus:border-transparent"
           name="message"
           placeholder="Message"></textarea>
       </div>

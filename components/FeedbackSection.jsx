@@ -11,7 +11,7 @@ function FeedbackSection() {
         <div className="feedCard bg-white shadow-lg rounded-lg overflow-hidden m-4 flex flex-col justify-between">
           <div className="p-4">
             <div className="flex justify-between items-center mb-2">
-              <h3 className="text-xs font-poppins font-medium">2 Mar. 2023</h3>
+              <h3 className="text-xs font-poppins font-medium">Last week</h3>
               <Image
                 src="/img/rating.svg"
                 alt="Rating"
@@ -20,20 +20,13 @@ function FeedbackSection() {
               />
             </div>
             <p className="text-xs font-raleway ml-6">
-              A great hotel, everything is new and very clean, the staff are
-              super friendly, professional, and very helpful. I highly recommend
-              without hesitation.
+            As a frequent business traveler, I appreciate the efficiency and convenience this hotel offers. The high-speed internet is reliable, the business center is well-equipped, and the meeting rooms are perfect for both formal and informal gatherings. It&apos;s my go-to hotel for business trips
             </p>
           </div>
           <div className="p-4 flex items-center">
-            <Image
-              src="/img/person1.png"
-              alt="Person"
-              width={42}
-              height={42}
-            />
+           
             <h3 className="ml-2 text-xs font-poppins font-medium">
-              Anthony Bruff
+             Chabane a
             </h3>
           </div>
         </div>
@@ -41,31 +34,22 @@ function FeedbackSection() {
         <div className="feedCard bg-white shadow-lg rounded-lg overflow-hidden m-4 flex flex-col justify-between">
           <div className="p-4">
             <div className="flex justify-between items-center mb-2">
-              <h3 className="text-xs font-poppins font-medium">2 Mar. 2023</h3>
+              <h3 className="text-xs font-poppins font-medium">15 avril. 2023</h3>
               <Image
                 src="/img/rating.svg"
                 alt="Rating"
                 width={89.68}
                 height={13}
-                layout="intrinsic"
               />
             </div>
             <p className="text-xs font-raleway ml-6">
-              A great hotel, everything is new and very clean, the staff are
-              super friendly, professional, and very helpful. I highly recommend
-              without hesitation.
+            This hotel exceeded all my expectations! The rooms are spacious, elegantly furnished, and offer stunning views. The staff are exceptionally attentive and always go the extra mile to ensure a comfortable stay. Absolutely worth every penny!
             </p>
           </div>
           <div className="p-4 flex items-center">
-            <Image
-              src="/img/person1.png"
-              alt="Person"
-              width={42}
-              height={42}
-              layout="intrinsic"
-            />
+           
             <h3 className="ml-2 text-xs font-poppins font-medium">
-              Anthony Bruff
+             Samira C
             </h3>
           </div>
         </div>
@@ -73,31 +57,22 @@ function FeedbackSection() {
         <div className="feedCard bg-white shadow-lg rounded-lg overflow-hidden m-4 flex flex-col justify-between">
           <div className="p-4">
             <div className="flex justify-between items-center mb-2">
-              <h3 className="text-xs font-poppins font-medium">2 Mar. 2023</h3>
+              <h3 className="text-xs font-poppins font-medium">13 Oct. 2023</h3>
               <Image
                 src="/img/rating.svg"
                 alt="Rating"
                 width={89.68}
                 height={13}
-                layout="intrinsic"
               />
             </div>
             <p className="text-xs font-raleway ml-6">
-              A great hotel, everything is new and very clean, the staff are
-              super friendly, professional, and very helpful. I highly recommend
-              without hesitation.
+            I was impressed by the serene ambiance of the hotel. The gardens are beautifully manicured, and there&apos;s a tranquil atmosphere that&apos;s perfect for relaxation. The spa services are top-notch, and the therapists are skilled and professional. A true oasis in the city!
             </p>
           </div>
           <div className="p-4 flex items-center">
-            <Image
-              src="/img/person1.png"
-              alt="Person"
-              width={42}
-              height={42}
-              layout="intrinsic"
-            />
+           
             <h3 className="ml-2 text-xs font-poppins font-medium">
-              Anthony Bruff
+            Belkandouci M
             </h3>
           </div>
         </div>
@@ -105,29 +80,21 @@ function FeedbackSection() {
         <div className="feedCard bg-white shadow-lg rounded-lg overflow-hidden m-4 flex flex-col justify-between">
           <div className="p-4">
             <div className="flex justify-between items-center mb-2">
-              <h3 className="text-xs font-poppins font-medium">2 Mar. 2023</h3>
+              <h3 className="text-xs font-poppins font-medium">27 Dec. 2023</h3>
               <Image
                 src="/img/rating.svg"
                 alt="Rating"
                 width={89.68}
                 height={13}
-                layout="intrinsic"
+                
               />
             </div>
             <p className="text-xs font-raleway ml-6">
-              A great hotel, everything is new and very clean, the staff are
-              super friendly, professional, and very helpful. I highly recommend
-              without hesitation.
+            Our family stay at this hotel was remarkable. The kids loved the play area and the pool. The family rooms are well thought out, with plenty of space and amenities tailored for children. The staff were very accommodating to our needs. A fantastic choice for family vacations!
             </p>
           </div>
           <div className="p-4 flex items-center">
-            <Image
-              src="/img/person1.png"
-              alt="Person"
-              width={42}
-              height={42}
-              layout="intrinsic"
-            />
+           
             <h3 className="ml-2 text-xs font-poppins font-medium">
               Anthony Bruff
             </h3>

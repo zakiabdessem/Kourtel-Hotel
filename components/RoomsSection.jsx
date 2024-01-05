@@ -12,48 +12,41 @@ import { useMediaQuery } from "react-responsive";
 
 const roomData = [
   {
-    imageUrl: "/img/room-couple.jpeg",
+    imageUrl: "/img/room-triple.jpeg",
+    altText: "Triple Room",
+    description: "Television set, Extra sheets and Breakfast",
+    size: "1 person",
+  },
+  {
+    imageUrl: "/img/room-double.jpeg",
     altText: "Double Room",
     description: "Television set, Extra sheets and Breakfast",
     size: "2 persons",
   },
   {
-    imageUrl: "/img/room-double.jpeg",
+    imageUrl: "/img/room-couple.jpeg",
     altText: "Couple Room",
     description: "Television set, Extra sheets and Breakfast",
     size: "For couples",
   },
   {
     imageUrl: "/img/room-triple.jpeg",
-    altText: "Triple Room",
+    altText: "Couple Room",
     description: "Television set, Extra sheets and Breakfast",
     size: "3 persons",
   },
   {
-    imageUrl: "/img/room-couple.jpeg",
-    altText: "Couple Room",
-    description: "Television set, Extra sheets and Breakfast",
-    size: "1 person",
+    imageUrl: "/img/suite.jpeg",
+    altText: "Suite Room",
+    description: "Television set, Extra sheets, Breakfast and extra Space.",
+    size: "Suite Room",
   },
   {
-    imageUrl: "/img/room-couple.jpeg",
-    altText: "Couple Room",
-    description: "Television set, Extra sheets and Breakfast",
-    size: "1 person",
-  },
-  {
-    imageUrl: "/img/room-couple.jpeg",
-    altText: "Couple Room",
-    description: "Television set, Extra sheets and Breakfast",
-    size: "1 person",
-  },
-  {
-    imageUrl: "/img/room-couple.jpeg",
-    altText: "Couple Room",
-    description: "Television set, Extra sheets and Breakfast",
-    size: "1 person",
-  },
-  // ... add more room objects as needed
+    imageUrl: "/img/resto.jpeg",
+    altText: "Restaurant",
+    description: "Enjoy our restaurant. Every day, new menu. Comfortable place.",
+    size: "Restaurant",
+  }
 ];
 
 function RoomsSection() {
@@ -65,10 +58,10 @@ function RoomsSection() {
       className="section-rooms w-full h-screen relative bg-[url('/img/rooms-bg.png')] bg-cover bg-center p-8">
       <div className="color-overlay absolute inset-0 bg-brown-600 bg-opacity-50"></div>
       <div className="content-container absolute inset-0 flex flex-col items-center justify-center">
-        <h1 className="section-title text-white">Luxurious Rooms</h1>
+        <h1 className="section-title text-white">Luxurious Facilities</h1>
         <div className="border-title bg-white w-32 h-1"></div>
         <h3 className="section-details text-white text-md p-2">
-          All rooms are designed for your comfort.
+          All Rooms and utilities are designed for your comfort.
         </h3>
 
         <Swiper
@@ -78,7 +71,7 @@ function RoomsSection() {
             clickable: true,
           }}
           autoplay={{
-            delay: 3000,
+            delay: 4000,
             disableOnInteraction: false,
           }}
           modules={[Autoplay]}
