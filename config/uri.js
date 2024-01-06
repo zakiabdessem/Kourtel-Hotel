@@ -1,3 +1,3 @@
-const clientURI = process.env.CLIENT_URI || "http://localhost:3000";
+const clientURI = process.env.CLIENT_URI || "https://www.kourtel.com";
 
 module.exports = { clientURI };
